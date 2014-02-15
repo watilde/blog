@@ -72,6 +72,4 @@ module.exports = {
 ```
 
 ## Impre
-TG there's `module.exports` <3
-
-A project using that: [dartstack](https://github.com/watilde/dartstack)
+e.g. of Project: [dartstack](https://github.com/watilde/dartstack)
