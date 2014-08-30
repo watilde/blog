@@ -71,5 +71,5 @@ module.exports = {
 };
 ```
 
-## Impre
-e.g. of Project: [dartstack](https://github.com/watilde/dartstack)
+
+Thanks.
