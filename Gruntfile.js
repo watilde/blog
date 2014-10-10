@@ -98,21 +98,23 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('build', [
-    'clean',
-    'pages',
-    'compass',
-    'copy'
-  ]);
-
-  grunt.registerTask('deploy', ['build', 'gh-pages']);
-
-  grunt.registerTask('server', [
+  grunt.registerTask(
     'build',
-    'connect',
-    'open',
-    'watch'
-  ]);
+    'Build my blog',
+    ['clean', 'pages', 'compass', 'copy']
+  );
+
+  grunt.registerTask(
+    'deploy',
+    'Deploy to master branch',
+    ['build', 'gh-pages']
+  );
+
+  grunt.registerTask(
+    'server',
+    'Launch server',
+    ['build', 'connect', 'open', 'watch']
+  );
 
   grunt.registerTask('default', 'server');
 
