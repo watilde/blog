@@ -40,6 +40,12 @@ module.exports = function (grunt) {
             'styles/fonts/**',
           ]
         }]
+      },
+      meta: {
+        files: [
+          {src: ['README.md'], dest: 'dist/README.md'},
+          {src: ['package.json'], dest: 'dist/package.json'}
+        ]
       }
     },
     watch: {
