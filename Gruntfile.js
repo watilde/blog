@@ -98,7 +98,7 @@ module.exports = function (grunt) {
     'gh-pages': {
       options: {
         base: 'dist',
-        branch: 'master'
+        branch: 'gh-pages'
       },
       src: ['**']
     }
