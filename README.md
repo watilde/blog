@@ -1,6 +1,6 @@
-# watilde.github.io
+# watilde.github.io/blog
 
 The website
 
 ## Badge
-+ [![Dependency Status](https://gemnasium.com/watilde/watilde.github.io.svg)](https://gemnasium.com/watilde/watilde.github.io)
++ [![Dependency Status](https://gemnasium.com/watilde/blog.svg)](https://gemnasium.com/watilde/blog
