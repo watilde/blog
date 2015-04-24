@@ -9,7 +9,6 @@
     "new": "hexo new",
     "start": "hexo server",
     "generate": "hexo generate",
-    "predeploy": "npm run generate && git commit -am 'npm run generate'",
     "deploy": "hexo deploy"
   },
   "dependencies": {
