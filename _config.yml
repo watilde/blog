@@ -70,3 +70,10 @@ deploy:
   type: git
   repo: git@github.com:watilde/blog.git
   branch: gh-pages
+
+# Feed
+## NPM: https://www.npmjs.com/package/hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
