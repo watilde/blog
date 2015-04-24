@@ -9,7 +9,8 @@
     "new": "hexo new",
     "start": "hexo server",
     "generate": "hexo generate",
-    "deploy": "hexo deploy"
+    "deploy": "hexo deploy",
+    "postdeploy": "git commit -am 'npm run deploy' && git push origin master"
   },
   "dependencies": {
     "hexo": "^3.0.0",
