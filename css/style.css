@@ -1063,8 +1063,10 @@ a.article-title:hover {
   color: #ddd;
 }
 #footer {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
   background: #262a30;
-  padding: 50px 0;
   border-top: 1px solid #ddd;
   color: #999;
 }
@@ -1076,7 +1078,6 @@ a.article-title:hover {
   text-decoration: underline;
 }
 #footer-info {
-  line-height: 1.6em;
   font-size: 0.85em;
 }
 .article-entry pre,
