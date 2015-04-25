@@ -166,6 +166,7 @@ body {
 #wrap {
   height: 100%;
   width: 100%;
+  min-width: 320px;
   position: absolute;
   top: 0;
   left: 0;
@@ -309,31 +310,10 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 300px;
+  height: 55px;
   position: relative;
   border-bottom: 1px solid #ddd;
-}
-#header:before,
-#header:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 40px;
-}
-#header:before {
-  top: 0;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -moz-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -ms-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: linear-gradient(rgba(0,0,0,0.2), transparent);
-}
-#header:after {
-  bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: linear-gradient(transparent, rgba(0,0,0,0.2));
+  background-color: #262a30;
 }
 #header-outer {
   height: 100%;
@@ -357,11 +337,11 @@ body {
 }
 #header-title {
   text-align: center;
-  height: 40px;
+  height: 15px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -20px;
+  margin-top: -7.5px;
 }
 #logo,
 #subtitle {
@@ -371,8 +351,8 @@ body {
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 15px;
+  line-height: 15px;
   letter-spacing: 2px;
 }
 #subtitle {
