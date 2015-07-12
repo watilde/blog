@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://watilde.github.io/blog/"/>
-  <updated>2015-04-24T16:30:57.000Z</updated>
+  <updated>2015-07-12T09:14:42.000Z</updated>
   <id>http://watilde.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[good day to start blogging]]></title>
+    <link href="http://watilde.github.io/blog/2015/07/12/good-day-to-start-blogging/"/>
+    <id>http://watilde.github.io/blog/2015/07/12/good-day-to-start-blogging/</id>
+    <published>2015-07-12T08:24:51.000Z</published>
+    <updated>2015-07-12T09:14:42.000Z</updated>
+    <content type="html"><![CDATA[<p>I went back to the parents’ home last night for the first time in a long time. It has passed about a half-year from last time, but my family and my dog seems very well. We have got a lot of catching up to do. Especially I’d like to know if my parents has any thoughts on living abroad. I didn’t know the detail about my parent’s past, when and when did they somewhere, but I knew only the vague information that they lived somewhere in several years. I tried asking them about it, they couldn’t remember about that just because that things was a long time ago. Probably, that was vaguely fun. Anyway, I didn’t get any deep information into my hands.</p>
+<p>Next day, I went to cool place called “OSS cafe”. Here is where many freelance worker and OSS hackers implicitly gather. Frequently they have held the event. Today “Coder Dojo” was held, to teach programming for children, children created some kind of application or game and presented about what did they do and how did it. Seems so hot, I got a motivation to create something from them. I did OSS activity to create npm and solve an issue by affected that. That’s good to relax and write a code I want and someone want.</p>
+<p>Today was such a peaceful day.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>I went back to the parents’ home last night for the first time in a long time. It has passed about a half-year from last time, but my fam]]>
+    </summary>
+    
+      <category term="daily" scheme="http://watilde.github.io/blog/tags/daily/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
