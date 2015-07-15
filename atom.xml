@@ -4,7 +4,7 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   <link href="http://watilde.github.io/blog/"/>
-  <updated>2015-07-12T09:14:42.000Z</updated>
+  <updated>2015-07-15T08:39:35.000Z</updated>
   <id>http://watilde.github.io/blog/</id>
   
   <author>
@@ -13,6 +13,37 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[npm-3-troubled-case]]></title>
+    <link href="http://watilde.github.io/blog/2015/07/15/npm-3-troubled-case/"/>
+    <id>http://watilde.github.io/blog/2015/07/15/npm-3-troubled-case/</id>
+    <published>2015-07-15T07:57:43.000Z</published>
+    <updated>2015-07-15T08:39:35.000Z</updated>
+    <content type="html"><![CDATA[<p>This article has been translated from <a href="http://qiita.com/mizchi/items/a398cd49941e21f65d85" target="_blank" rel="external">this article</a>, original article was written by <a href="https://github.com/mizchi" target="_blank" rel="external">@mizchi</a>.</p>
+<hr>
+<p>I just have run <code>npm install -g npm@3</code> and trying to use it today. 3.1.2 seems <code>VERY BETA</code>(I don’t know the actual meaning of this whether close or far from alpha), it will be major release at some future time.</p>
+<h2 id="a_flatter_node_modules_directory">a flatter node_modules directory</h2><p>All of your dependencies will be sitting next to each other at the top level. Only when there are conflicts will modules be installed at deeper levels. This make things data volume reduction when there are conflicts.</p>
+<h2 id="“require”_hasn’t_changed_at_all">“require” hasn’t changed at all</h2><p>Now it has become possible to require directly not only child module but also grandchild. For example, when use foo module depended on bar module, it has become possible to do <code>require(&#39;bar&#39;)</code>. This means the possibility of rewritten dynamically a module required. I concerned about this problem.</p>
+<h2 id="An_actual_example">An actual example</h2><p>It required same module by cache when use same version between child and grandchild. From a standpoint of child module, set global option when child module assume grand child module as singleton, it suddenly has broken because of flat directory.</p>
+<p>e.g. To use <code>marked</code> module</p>
+<p>gfm-marked/gfm-marked.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> marked = <span class="built_in">require</span>(<span class="string">'marked'</span>);</span><br><span class="line">marked.setOptions(&#123;</span><br><span class="line">  renderer: <span class="keyword">new</span> marked.Renderer(),</span><br><span class="line">  gfm: <span class="literal">true</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">module</span>.exports = marked</span><br></pre></td></tr></table></figure></p>
+<p>not-gfm-marked/not-gfm-marked.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> marked = <span class="built_in">require</span>(<span class="string">'marked'</span>);</span><br><span class="line">marked.setOptions(&#123;</span><br><span class="line">  renderer: <span class="keyword">new</span> marked.Renderer(),</span><br><span class="line">  gfm: <span class="literal">false</span></span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">module</span>.exports = marked</span><br></pre></td></tr></table></figure></p>
+<p>index.js<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> notGfm = <span class="built_in">require</span>(<span class="string">'not-gfm-marked'</span>);</span><br><span class="line"><span class="keyword">var</span> gfm = <span class="built_in">require</span>(<span class="string">'gfm-marked'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// There is no fenced code block,</span></span><br><span class="line"><span class="comment">// but it become valid by the order required</span></span><br><span class="line">notGfm(<span class="string">'```hello```'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>It seems very rare case, but it might be so hard to resolve it. The other side, browserify doesn’t support npm@3 yet. We need to wait a little.</p>
+<p>Thanks.</p>
+<h2 id="See_also">See also</h2><ul>
+<li><a href="http://blog.npmjs.org/post/110924823920/npm-weekly-5" target="_blank" rel="external">npm Weekly, #5</a></li>
+<li><a href="http://qiita.com/mizchi/items/a398cd49941e21f65d85" target="_blank" rel="external">npm v3.x 試してみた &amp; 注意する点</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>This article has been translated from <a href="http://qiita.com/mizchi/items/a398cd49941e21f65d85" target="_blank" rel="external">this ar]]>
+    </summary>
+    
+      <category term="npm" scheme="http://watilde.github.io/blog/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[good day to start blogging]]></title>
