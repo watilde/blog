@@ -1,6 +1,6 @@
 title: "npm-3-troubled-case"
 date: 2015-07-15 16:57:43
-tags:npm
+tags: npm
 ---
 This article has been translated from [this article](http://qiita.com/mizchi/items/a398cd49941e21f65d85), original article was written by [@mizchi](https://github.com/mizchi).
 
