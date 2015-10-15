@@ -10,7 +10,7 @@
     "start": "hexo server",
     "generate": "hexo generate",
     "deploy": "hexo deploy",
-    "postdeploy": "git add . && git commit -am 'npm run deploy' && git push origin master"
+    "save": "git add . && git commit -am 'npm run deploy' && git push origin master"
   },
   "dependencies": {
     "hexo": "^3.0.0",
